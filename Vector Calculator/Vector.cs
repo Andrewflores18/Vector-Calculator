@@ -26,13 +26,12 @@ namespace Vector_Calculator
         public float GetMagnitude()
         {
             // ADD CODE HERE, THEN REMOVE BELOW LINE
-            throw new NotImplementedException();
+            return MathF.Sqrt(MathF.Pow(x, 2) + MathF.Pow(x, 2));
         }
 
         public float GetDirection()
         {
-            // ADD CODE HERE, THEN REMOVE BELOW LINE
-            throw new NotImplementedException();
+            return Math.Atan(y / x);
         }
 
         public static Vector Add(Vector v1, Vector v2)
@@ -44,8 +43,7 @@ namespace Vector_Calculator
 
         public static Vector Negate(Vector v)
         {
-            // ADD CODE HERE, THEN REMOVE BELOW LINE
-            throw new NotImplementedException();
+            return new Vector(v1.x * -1, v1.y * -1, v1.z * -1);
         }
 
         public static Vector Subtract(Vector v1, Vector v2)
@@ -56,8 +54,7 @@ namespace Vector_Calculator
 
         public static Vector Scale(Vector v)
         {
-            // ADD CODE HERE, THEN REMOVE BELOW LINE
-            throw new NotImplementedException();
+            return new Vector
         }
 
         public static Vector Normalize(Vector v)
