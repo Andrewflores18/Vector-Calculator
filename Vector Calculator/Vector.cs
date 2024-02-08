@@ -25,36 +25,34 @@ namespace Vector_Calculator
 
         public float GetMagnitude()
         {
-            // ADD CODE HERE, THEN REMOVE BELOW LINE
             return MathF.Sqrt(MathF.Pow(x, 2) + MathF.Pow(x, 2));
         }
 
         public float GetDirection()
         {
-            return Math.Atan(y / x);
+            return (float)Math.Atan(y / x);
         }
 
         public static Vector Add(Vector v1, Vector v2)
         {
-            // ADD CODE HERE, THEN REMOVE BELOW LINE
             return new Vector(v1.x + v2.x, v1.y + v2.y, v1.z + v2.z);
             
         }
 
         public static Vector Negate(Vector v)
         {
-            return new Vector(v1.x * -1, v1.y * -1, v1.z * -1);
+            return new Vector(v.x * -1, v.y * -1, v.z * -1);
         }
 
         public static Vector Subtract(Vector v1, Vector v2)
         {
-            // ADD CODE HERE, THEN REMOVE BELOW LINE
             return new Vector(v1.x - v2.x, v1.y - v2.y, v1.z - v2.z);
         }
 
         public static Vector Scale(Vector v)
         {
-            return new Vector
+            // ADD CODE HERE, THEN REMOVE BELOW LINE
+            throw new NotImplementedException();
         }
 
         public static Vector Normalize(Vector v)
@@ -71,8 +69,8 @@ namespace Vector_Calculator
 
         public static Vector CrossProduct(Vector v1, Vector v2)
         {
-            // ADD CODE HERE, THEN REMOVE BELOW LINE
-            throw new NotImplementedException();
+            return new Vector((v1.y * v2.z) - (v1.z * v2.y), (v1.z * v2.x) - (v1.x * v2.z), (v1.x * v2.y) - (v1.y * v2.x));
+
         }
 
         public static Vector AngleBetween(Vector v1, Vector v2)
